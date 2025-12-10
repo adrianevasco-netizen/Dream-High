@@ -39,12 +39,10 @@ export function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <a
+            <div
               key={index}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
+              className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all cursor-pointer"
+              onClick={() => window.open(project.link, "_blank")}
             >
               <div className="aspect-video overflow-hidden">
                 <img
@@ -68,7 +66,7 @@ export function Projects() {
                   <ExternalLink className="w-4 h-4" />
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
