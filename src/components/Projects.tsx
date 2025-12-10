@@ -6,7 +6,7 @@ const projects = [
     category: "Mobile Design",
     image:
       "https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY0MTIzMjc0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    link: "https://www.figma.com/design/DlrXZPNcVlOeuIfY7prqb5/DreamHIgh?node-id=1-2&t=xa3Mmqu10HiBYp6X-1"
+    link: "https://your-figma-link.com"
   },
   {
     title: "Healthcare Dashboard",
@@ -20,7 +20,7 @@ const projects = [
     category: "Web Development",
     image:
       "https://images.unsplash.com/photo-1611648694931-1aeda329f9da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2NDA2NjkxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    link: "https://www.figma.com/files/project/451357669"
+    link: "https://your-website.com"
   }
 ];
 
@@ -39,9 +39,12 @@ export function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div
+            <a
               key={index}
-              className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all cursor-pointer"
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
             >
               <div className="aspect-video overflow-hidden">
                 <img
@@ -55,22 +58,17 @@ export function Projects() {
                 <span className="inline-block px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-sm mb-3">
                   {project.category}
                 </span>
+
                 <h3 className="text-xl text-gray-900 mb-2 group-hover:text-teal-600 transition-colors">
                   {project.title}
                 </h3>
 
-                {/* Visit Site Link */}
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-teal-600 opacity-0 group-hover:opacity-100 transition-opacity"
-                >
+                <div className="flex items-center text-teal-600 opacity-0 group-hover:opacity-100 transition-opacity">
                   <span className="mr-2">Visit Site</span>
                   <ExternalLink className="w-4 h-4" />
-                </a>
+                </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
