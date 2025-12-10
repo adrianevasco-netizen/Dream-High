@@ -13,14 +13,14 @@ const projects = [
     category: "UI/UX Design",
     image:
       "https://images.unsplash.com/photo-1677469684112-5dfb3aa4d3df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXNpZ258ZW58MXx8fHwxNzY0MTQ0NDIyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    link: "https://github.com/adrianevasco-netizen/Dream-High"
+    link: "https://www.figma.com/design/nc4Xc3SlV7S3nIbKRiD1YQ/Health-Track?node-id=0-1&t=62muBsb8SYeFFJBl-1"
   },
   {
     title: "Digital Design",
     category: "Web Development",
     image:
       "https://images.unsplash.com/photo-1611648694931-1aeda329f9da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2NDA2NjkxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    link: "https://your-website.com"
+    link: "https://www.figma.com/files/project/451357669"
   }
 ];
 
